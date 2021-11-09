@@ -46,7 +46,6 @@ abstract class TextBase extends BaseControl
 
 	/**
 	 * Returns control's value.
-	 * @return mixed
 	 */
 	public function getValue(): mixed
 	{

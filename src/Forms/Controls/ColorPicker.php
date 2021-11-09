@@ -14,6 +14,7 @@ use Nette;
 
 /**
  * Color picker.
+ * @extends BaseControl<?string>
  */
 class ColorPicker extends BaseControl
 {

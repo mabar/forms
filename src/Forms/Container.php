@@ -319,6 +319,7 @@ class Container extends Nette\ComponentModel\Container implements \ArrayAccess
 
 	/**
 	 * Adds single-line text input control to the form.
+	 * @return Controls\TextInput<string>
 	 */
 	public function addText(
 		string $name,
@@ -334,6 +335,7 @@ class Container extends Nette\ComponentModel\Container implements \ArrayAccess
 
 	/**
 	 * Adds single-line text input control used for sensitive input such as passwords.
+	 * @return Controls\TextInput<string>
 	 */
 	public function addPassword(
 		string $name,
@@ -350,6 +352,7 @@ class Container extends Nette\ComponentModel\Container implements \ArrayAccess
 
 	/**
 	 * Adds multi-line text input control to the form.
+	 * @return Controls\TextInput<string>
 	 */
 	public function addTextArea(
 		string $name,
@@ -365,6 +368,7 @@ class Container extends Nette\ComponentModel\Container implements \ArrayAccess
 
 	/**
 	 * Adds input for email.
+	 * @return Controls\TextInput<string>
 	 */
 	public function addEmail(string $name, string|Stringable|null $label = null): Controls\TextInput
 	{
@@ -375,6 +379,7 @@ class Container extends Nette\ComponentModel\Container implements \ArrayAccess
 
 	/**
 	 * Adds input for integer.
+	 * @return Controls\TextInput<int>
 	 */
 	public function addInteger(string $name, string|Stringable|null $label = null): Controls\TextInput
 	{
@@ -386,6 +391,7 @@ class Container extends Nette\ComponentModel\Container implements \ArrayAccess
 
 	/**
 	 * Adds input for float.
+	 * @return Controls\TextInput<float>
 	 */
 	public function addFloat(string $name, string|Stringable|null $label = null): Controls\TextInput
 	{
@@ -434,6 +440,7 @@ class Container extends Nette\ComponentModel\Container implements \ArrayAccess
 
 	/**
 	 * Adds control that allows the user to upload files.
+	 * @return Controls\UploadControl<Nette\Http\FileUpload>
 	 */
 	public function addUpload(string $name, string|Stringable|null $label = null): Controls\UploadControl
 	{
@@ -443,6 +450,7 @@ class Container extends Nette\ComponentModel\Container implements \ArrayAccess
 
 	/**
 	 * Adds control that allows the user to upload multiple files.
+	 * @return Controls\UploadControl<Nette\Http\FileUpload[]>
 	 */
 	public function addMultiUpload(string $name, string|Stringable|null $label = null): Controls\UploadControl
 	{
