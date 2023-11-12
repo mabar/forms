@@ -136,10 +136,9 @@ abstract class BaseControl extends Nette\ComponentModel\Component implements Con
 
 	/**
 	 * Sets control's value.
-	 * @return static
 	 * @internal
 	 */
-	public function setValue(mixed $value)
+	public function setValue($value): static
 	{
 		$this->value = $value;
 		return $this;
@@ -149,7 +148,7 @@ abstract class BaseControl extends Nette\ComponentModel\Component implements Con
 	/**
 	 * Returns control's value.
 	 */
-	public function getValue()
+	public function getValue(): mixed
 	{
 		return $this->value;
 	}
@@ -167,9 +166,8 @@ abstract class BaseControl extends Nette\ComponentModel\Component implements Con
 
 	/**
 	 * Sets control's default value.
-	 * @return static
 	 */
-	public function setDefaultValue($value)
+	public function setDefaultValue($value): static
 	{
 		$form = $this->getForm(false);
 		if ($this->isDisabled() || !$form || !$form->isAnchored() || !$form->isSubmitted()) {
@@ -228,9 +226,8 @@ abstract class BaseControl extends Nette\ComponentModel\Component implements Con
 
 	/**
 	 * Generates control's HTML element.
-	 * @return Html|string
 	 */
-	public function getControl()
+	public function getControl(): Html|string
 	{
 		$this->setOption('rendered', true);
 		$el = clone $this->control;
@@ -246,9 +243,8 @@ abstract class BaseControl extends Nette\ComponentModel\Component implements Con
 
 	/**
 	 * Generates label's HTML element.
-	 * @return Html|string|null
 	 */
-	public function getLabel(string|Stringable|null $caption = null)
+	public function getLabel(string|Stringable|null $caption = null): Html|string|null
 	{
 		$label = clone $this->label;
 		$label->for = $this->getHtmlId();
@@ -396,13 +392,13 @@ abstract class BaseControl extends Nette\ComponentModel\Component implements Con
 
 	/**
 	 * Adds a validation rule.
-	 * @return static
 	 */
 	public function addRule(
 		callable|string $validator,
 		string|Stringable|null $errorMessage = null,
 		mixed $arg = null,
-	) {
+	): static
+	{
 		$this->rules->addRule($validator, $errorMessage, $arg);
 		return $this;
 	}

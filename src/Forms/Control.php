@@ -19,15 +19,14 @@ interface Control
 	/**
 	 * Sets control's value.
 	 * @param  T|null  $value
-	 * @return static
 	 */
-	function setValue(mixed $value);
+	function setValue(mixed $value): static;
 
 	/**
 	 * Returns control's value.
 	 * @return  T|null
 	 */
-	function getValue();
+	function getValue(): mixed;
 
 	function validate(): void;
 
