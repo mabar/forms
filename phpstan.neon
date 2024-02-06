@@ -6,6 +6,9 @@ parameters:
 
 	treatPhpDocTypesAsCertain: false
 
+	excludePaths:
+		- src/Bridges/FormsLatte/FormMacros.php
 
 includes:
 	- vendor/phpstan/phpstan-nette/extension.neon
+	- phpstan.baseline.php

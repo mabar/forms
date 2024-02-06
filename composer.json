@@ -40,6 +40,7 @@
 	"minimum-stability": "dev",
 	"scripts": {
 		"phpstan": "phpstan analyse",
+		"phpstan-baseline": "phpstan analyse -b phpstan.baseline.php",
 		"tester": "tester tests -s"
 	},
 	"extra": {
