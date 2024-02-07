@@ -158,6 +158,9 @@ final class Helpers
 	}
 
 
+	/**
+	 * @param Control<mixed> $control
+	 */
 	private static function exportArgument(mixed $value, Control $control): mixed
 	{
 		if ($value instanceof Control) {

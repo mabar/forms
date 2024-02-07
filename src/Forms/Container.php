@@ -94,7 +94,7 @@ class Container extends Nette\ComponentModel\Container implements \ArrayAccess
 
 	/**
 	 * Returns the values submitted by the form.
-	 * @param  Control[]|null  $controls
+	 * @param  Control<mixed>[]|null  $controls
 	 */
 	public function getValues(string|object|bool|null $returnType = null, ?array $controls = null): object|array
 	{
@@ -132,7 +132,7 @@ class Container extends Nette\ComponentModel\Container implements \ArrayAccess
 
 	/**
 	 * Returns the potentially unvalidated values submitted by the form.
-	 * @param  Control[]|null  $controls
+	 * @param  Control<mixed>[]|null  $controls
 	 */
 	public function getUntrustedValues(string|object|null $returnType, ?array $controls = null): object|array
 	{
@@ -219,7 +219,7 @@ class Container extends Nette\ComponentModel\Container implements \ArrayAccess
 
 	/**
 	 * Performs the server side validation.
-	 * @param  Control[]|null  $controls
+	 * @param  Control<mixed>[]|null  $controls
 	 */
 	public function validate(?array $controls = null): void
 	{

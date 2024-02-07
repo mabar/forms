@@ -36,6 +36,8 @@ use Stringable;
  * @property-read array $errors
  * @property-read array $options
  * @property-read string $error
+ *
+ * @implements Control<mixed>
  */
 abstract class BaseControl extends Nette\ComponentModel\Component implements Control
 {
@@ -417,6 +419,8 @@ abstract class BaseControl extends Nette\ComponentModel\Component implements Con
 
 	/**
 	 * Adds a validation condition based on another control a returns new branch.
+	 *
+	 * @param Control<mixed> $control
 	 */
 	public function addConditionOn(Control $control, $validator, $value = null): Rules
 	{

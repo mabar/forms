@@ -18,6 +18,7 @@ use Stringable;
  */
 final class Rule
 {
+	/** @var Control<mixed> */
 	public Control $control;
 	public mixed $validator;
 	public mixed $arg = null;

@@ -208,6 +208,8 @@ class DefaultFormRenderer implements Nette\Forms\FormRenderer
 
 	/**
 	 * Renders validation errors (per form or per control).
+	 *
+	 * @param Nette\Forms\Control<mixed>|null $control
 	 */
 	public function renderErrors(?Nette\Forms\Control $control = null, bool $own = true): string
 	{
@@ -356,6 +358,8 @@ class DefaultFormRenderer implements Nette\Forms\FormRenderer
 
 	/**
 	 * Renders single visual row.
+	 *
+	 * @param Nette\Forms\Control<mixed> $control
 	 */
 	public function renderPair(Nette\Forms\Control $control): string
 	{
@@ -376,7 +380,7 @@ class DefaultFormRenderer implements Nette\Forms\FormRenderer
 
 	/**
 	 * Renders single visual row of multiple controls.
-	 * @param  Nette\Forms\Control[]  $controls
+	 * @param  Nette\Forms\Control<mixed>[]  $controls
 	 */
 	public function renderPairMulti(array $controls): string
 	{
@@ -423,6 +427,8 @@ class DefaultFormRenderer implements Nette\Forms\FormRenderer
 
 	/**
 	 * Renders 'label' part of visual row of controls.
+	 *
+	 * @param Nette\Forms\Control<mixed> $control
 	 */
 	public function renderLabel(Nette\Forms\Control $control): Html
 	{
@@ -443,6 +449,8 @@ class DefaultFormRenderer implements Nette\Forms\FormRenderer
 
 	/**
 	 * Renders 'control' part of visual row of controls.
+	 *
+	 * @param Nette\Forms\Control<mixed> $control
 	 */
 	public function renderControl(Nette\Forms\Control $control): Html
 	{
@@ -500,12 +508,18 @@ class DefaultFormRenderer implements Nette\Forms\FormRenderer
 	}
 
 
+	/**
+	 * @param Nette\Forms\Control<mixed> $control
+	 */
 	protected function renderLabelElement(Nette\Forms\Control $control): Html|string|null
 	{
 		return $control->getLabel();
 	}
 
 
+	/**
+	 * @param Nette\Forms\Control<mixed> $control
+	 */
 	protected function renderControlElement(Nette\Forms\Control $control): Html|string
 	{
 		return $control->getControl();

@@ -50,6 +50,9 @@ final class ControlGroup
 	}
 
 
+	/**
+	 * @param Control<mixed> $control
+	 */
 	public function remove(Control $control): void
 	{
 		unset($this->controls[$control]);
@@ -66,7 +69,7 @@ final class ControlGroup
 	}
 
 
-	/** @return Control[] */
+	/** @return Control<mixed>[] */
 	public function getControls(): array
 	{
 		$res = [];

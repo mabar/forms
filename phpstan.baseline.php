@@ -351,7 +351,7 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	// identifier: return.type
-	'message' => '#^Method Nette\\\\Forms\\\\ControlGroup\\:\\:getControls\\(\\) should return array\\<Nette\\\\Forms\\\\Control\\> but returns array\\<int\\<0, max\\>, object\\>\\.$#',
+	'message' => '#^Method Nette\\\\Forms\\\\ControlGroup\\:\\:getControls\\(\\) should return array\\<Nette\\\\Forms\\\\Control\\<mixed\\>\\> but returns array\\<int\\<0, max\\>, object\\>\\.$#',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Forms/ControlGroup.php',
 ];
@@ -957,7 +957,7 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	// identifier: method.notFound
-	'message' => '#^Call to an undefined method Nette\\\\Forms\\\\Control\\:\\:getParent\\(\\)\\.$#',
+	'message' => '#^Call to an undefined method Nette\\\\Forms\\\\Control\\<mixed\\>\\:\\:getParent\\(\\)\\.$#',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Forms/Form.php',
 ];
@@ -1048,7 +1048,13 @@ $ignoreErrors[] = [
 $ignoreErrors[] = [
 	// identifier: method.notFound
 	'message' => '#^Call to an undefined method Nette\\\\Forms\\\\Control\\:\\:getHtmlName\\(\\)\\.$#',
-	'count' => 2,
+	'count' => 1,
+	'path' => __DIR__ . '/src/Forms/Helpers.php',
+];
+$ignoreErrors[] = [
+	// identifier: method.notFound
+	'message' => '#^Call to an undefined method Nette\\\\Forms\\\\Control\\<mixed\\>\\:\\:getHtmlName\\(\\)\\.$#',
+	'count' => 1,
 	'path' => __DIR__ . '/src/Forms/Helpers.php',
 ];
 $ignoreErrors[] = [
@@ -1185,43 +1191,43 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	// identifier: method.notFound
-	'message' => '#^Call to an undefined method Nette\\\\Forms\\\\Control\\:\\:getControl\\(\\)\\.$#',
+	'message' => '#^Call to an undefined method Nette\\\\Forms\\\\Control\\<mixed\\>\\:\\:getControl\\(\\)\\.$#',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Forms/Rendering/DefaultFormRenderer.php',
 ];
 $ignoreErrors[] = [
 	// identifier: method.notFound
-	'message' => '#^Call to an undefined method Nette\\\\Forms\\\\Control\\:\\:getForm\\(\\)\\.$#',
+	'message' => '#^Call to an undefined method Nette\\\\Forms\\\\Control\\<mixed\\>\\:\\:getForm\\(\\)\\.$#',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Forms/Rendering/DefaultFormRenderer.php',
 ];
 $ignoreErrors[] = [
 	// identifier: method.notFound
-	'message' => '#^Call to an undefined method Nette\\\\Forms\\\\Control\\:\\:getLabel\\(\\)\\.$#',
+	'message' => '#^Call to an undefined method Nette\\\\Forms\\\\Control\\<mixed\\>\\:\\:getLabel\\(\\)\\.$#',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Forms/Rendering/DefaultFormRenderer.php',
 ];
 $ignoreErrors[] = [
 	// identifier: method.notFound
-	'message' => '#^Call to an undefined method Nette\\\\Forms\\\\Control\\:\\:getOption\\(\\)\\.$#',
+	'message' => '#^Call to an undefined method Nette\\\\Forms\\\\Control\\<mixed\\>\\:\\:getOption\\(\\)\\.$#',
 	'count' => 7,
 	'path' => __DIR__ . '/src/Forms/Rendering/DefaultFormRenderer.php',
 ];
 $ignoreErrors[] = [
 	// identifier: method.notFound
-	'message' => '#^Call to an undefined method Nette\\\\Forms\\\\Control\\:\\:hasErrors\\(\\)\\.$#',
+	'message' => '#^Call to an undefined method Nette\\\\Forms\\\\Control\\<mixed\\>\\:\\:hasErrors\\(\\)\\.$#',
 	'count' => 3,
 	'path' => __DIR__ . '/src/Forms/Rendering/DefaultFormRenderer.php',
 ];
 $ignoreErrors[] = [
 	// identifier: method.notFound
-	'message' => '#^Call to an undefined method Nette\\\\Forms\\\\Control\\:\\:isRequired\\(\\)\\.$#',
+	'message' => '#^Call to an undefined method Nette\\\\Forms\\\\Control\\<mixed\\>\\:\\:isRequired\\(\\)\\.$#',
 	'count' => 4,
 	'path' => __DIR__ . '/src/Forms/Rendering/DefaultFormRenderer.php',
 ];
 $ignoreErrors[] = [
 	// identifier: method.notFound
-	'message' => '#^Call to an undefined method Nette\\\\Forms\\\\Control\\:\\:setOption\\(\\)\\.$#',
+	'message' => '#^Call to an undefined method Nette\\\\Forms\\\\Control\\<mixed\\>\\:\\:setOption\\(\\)\\.$#',
 	'count' => 2,
 	'path' => __DIR__ . '/src/Forms/Rendering/DefaultFormRenderer.php',
 ];
@@ -1245,19 +1251,19 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	// identifier: property.notFound
-	'message' => '#^Access to an undefined property Nette\\\\Forms\\\\Control\\:\\:\\$name\\.$#',
+	'message' => '#^Access to an undefined property Nette\\\\Forms\\\\Control\\<mixed\\>\\:\\:\\$name\\.$#',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Forms/Rules.php',
 ];
 $ignoreErrors[] = [
 	// identifier: method.notFound
-	'message' => '#^Call to an undefined method Nette\\\\Forms\\\\Control\\:\\:addError\\(\\)\\.$#',
+	'message' => '#^Call to an undefined method Nette\\\\Forms\\\\Control\\<mixed\\>\\:\\:addError\\(\\)\\.$#',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Forms/Rules.php',
 ];
 $ignoreErrors[] = [
 	// identifier: method.notFound
-	'message' => '#^Call to an undefined method Nette\\\\Forms\\\\Control\\:\\:isFilled\\(\\)\\.$#',
+	'message' => '#^Call to an undefined method Nette\\\\Forms\\\\Control\\<mixed\\>\\:\\:isFilled\\(\\)\\.$#',
 	'count' => 2,
 	'path' => __DIR__ . '/src/Forms/Rules.php',
 ];
@@ -1359,13 +1365,13 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	// identifier: method.notFound
-	'message' => '#^Call to an undefined method Nette\\\\Forms\\\\Control\\:\\:getForm\\(\\)\\.$#',
+	'message' => '#^Call to an undefined method Nette\\\\Forms\\\\Control\\<mixed\\>\\:\\:getForm\\(\\)\\.$#',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Forms/Validator.php',
 ];
 $ignoreErrors[] = [
 	// identifier: method.notFound
-	'message' => '#^Call to an undefined method Nette\\\\Forms\\\\Control\\:\\:getName\\(\\)\\.$#',
+	'message' => '#^Call to an undefined method Nette\\\\Forms\\\\Control\\<mixed\\>\\:\\:getName\\(\\)\\.$#',
 	'count' => 2,
 	'path' => __DIR__ . '/src/Forms/Validator.php',
 ];
@@ -1707,7 +1713,7 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	// identifier: argument.type
-	'message' => '#^Parameter \\#1 \\$control of method Nette\\\\Forms\\\\ControlGroup\\:\\:remove\\(\\) expects Nette\\\\Forms\\\\Control, Nette\\\\ComponentModel\\\\IComponent given\\.$#',
+	'message' => '#^Parameter \\#1 \\$control of method Nette\\\\Forms\\\\ControlGroup\\:\\:remove\\(\\) expects Nette\\\\Forms\\\\Control\\<mixed\\>, Nette\\\\ComponentModel\\\\IComponent given\\.$#',
 	'count' => 1,
 	'path' => __DIR__ . '/tests/Forms/ControlGroup.phpt',
 ];
@@ -1989,7 +1995,7 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	// identifier: argument.type
-	'message' => '#^Parameter \\#1 \\$control of method Nette\\\\Forms\\\\Controls\\\\BaseControl\\:\\:addConditionOn\\(\\) expects Nette\\\\Forms\\\\Control, Nette\\\\ComponentModel\\\\IComponent given\\.$#',
+	'message' => '#^Parameter \\#1 \\$control of method Nette\\\\Forms\\\\Controls\\\\BaseControl\\:\\:addConditionOn\\(\\) expects Nette\\\\Forms\\\\Control\\<mixed\\>, Nette\\\\ComponentModel\\\\IComponent given\\.$#',
 	'count' => 3,
 	'path' => __DIR__ . '/tests/Forms/Forms.renderer.1.phpt',
 ];
@@ -2007,7 +2013,7 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	// identifier: argument.type
-	'message' => '#^Parameter \\#1 \\$control of method Nette\\\\Forms\\\\Controls\\\\BaseControl\\:\\:addConditionOn\\(\\) expects Nette\\\\Forms\\\\Control, Nette\\\\ComponentModel\\\\IComponent given\\.$#',
+	'message' => '#^Parameter \\#1 \\$control of method Nette\\\\Forms\\\\Controls\\\\BaseControl\\:\\:addConditionOn\\(\\) expects Nette\\\\Forms\\\\Control\\<mixed\\>, Nette\\\\ComponentModel\\\\IComponent given\\.$#',
 	'count' => 3,
 	'path' => __DIR__ . '/tests/Forms/Forms.renderer.2.phpt',
 ];
@@ -2067,13 +2073,13 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	// identifier: argument.type
-	'message' => '#^Parameter \\#1 \\$control of method Nette\\\\Forms\\\\Controls\\\\BaseControl\\:\\:addConditionOn\\(\\) expects Nette\\\\Forms\\\\Control, Nette\\\\ComponentModel\\\\IComponent given\\.$#',
+	'message' => '#^Parameter \\#1 \\$control of method Nette\\\\Forms\\\\Controls\\\\BaseControl\\:\\:addConditionOn\\(\\) expects Nette\\\\Forms\\\\Control\\<mixed\\>, Nette\\\\ComponentModel\\\\IComponent given\\.$#',
 	'count' => 25,
 	'path' => __DIR__ . '/tests/Forms/Forms.toggle.phpt',
 ];
 $ignoreErrors[] = [
 	// identifier: argument.type
-	'message' => '#^Parameter \\#1 \\$control of method Nette\\\\Forms\\\\Rules\\:\\:addConditionOn\\(\\) expects Nette\\\\Forms\\\\Control, Nette\\\\ComponentModel\\\\IComponent given\\.$#',
+	'message' => '#^Parameter \\#1 \\$control of method Nette\\\\Forms\\\\Rules\\:\\:addConditionOn\\(\\) expects Nette\\\\Forms\\\\Control\\<mixed\\>, Nette\\\\ComponentModel\\\\IComponent given\\.$#',
 	'count' => 25,
 	'path' => __DIR__ . '/tests/Forms/Forms.toggle.phpt',
 ];
@@ -2121,7 +2127,7 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	// identifier: argument.type
-	'message' => '#^Parameter \\#1 \\$control of method Nette\\\\Forms\\\\Controls\\\\BaseControl\\:\\:addConditionOn\\(\\) expects Nette\\\\Forms\\\\Control, Nette\\\\ComponentModel\\\\IComponent given\\.$#',
+	'message' => '#^Parameter \\#1 \\$control of method Nette\\\\Forms\\\\Controls\\\\BaseControl\\:\\:addConditionOn\\(\\) expects Nette\\\\Forms\\\\Control\\<mixed\\>, Nette\\\\ComponentModel\\\\IComponent given\\.$#',
 	'count' => 1,
 	'path' => __DIR__ . '/tests/Forms/Rules.required.phpt',
 ];
@@ -2139,7 +2145,7 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	// identifier: argument.type
-	'message' => '#^Parameter \\#1 \\$control of method Nette\\\\Forms\\\\Controls\\\\BaseControl\\:\\:addConditionOn\\(\\) expects Nette\\\\Forms\\\\Control, Nette\\\\ComponentModel\\\\IComponent given\\.$#',
+	'message' => '#^Parameter \\#1 \\$control of method Nette\\\\Forms\\\\Controls\\\\BaseControl\\:\\:addConditionOn\\(\\) expects Nette\\\\Forms\\\\Control\\<mixed\\>, Nette\\\\ComponentModel\\\\IComponent given\\.$#',
 	'count' => 1,
 	'path' => __DIR__ . '/tests/Forms/Rules.valid.phpt',
 ];

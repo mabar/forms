@@ -12,6 +12,8 @@ namespace Nette\Forms;
 
 /**
  * Defines method that must be implemented to allow a control to submit web form.
+ *
+ * @extends Control<mixed>
  */
 interface SubmitterControl extends Control
 {

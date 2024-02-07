@@ -15,6 +15,8 @@ use Stringable;
 
 /**
  * List of validation & condition rules.
+ *
+ * @todo - generic control?
  * @implements \IteratorAggregate<int, Rule>
  */
 final class Rules implements \IteratorAggregate
@@ -30,9 +32,13 @@ final class Rules implements \IteratorAggregate
 	private array $rules = [];
 	private Rules $parent;
 	private array $toggles = [];
+	/** @var Control<mixed> */
 	private Control $control;
 
 
+	/**
+	 * @param Control<mixed> $control
+	 */
 	public function __construct(Control $control)
 	{
 		$this->control = $control;
@@ -129,6 +135,8 @@ final class Rules implements \IteratorAggregate
 
 	/**
 	 * Adds a validation condition on specified control a returns new branch.
+	 * @param Control<mixed> $control
+	 * @todo - Control could be generic, but how to specify its type in Rule?
 	 */
 	public function addConditionOn(Control $control, $validator, $arg = null): static
 	{

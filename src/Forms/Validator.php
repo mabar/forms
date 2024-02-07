@@ -111,6 +111,8 @@ final class Validator
 
 	/**
 	 * Is control's value equal with second parameter?
+	 *
+	 * @param Control<mixed> $control
 	 */
 	public static function validateEqual(Control $control, $arg): bool
 	{
@@ -138,6 +140,8 @@ final class Validator
 
 	/**
 	 * Is control's value not equal with second parameter?
+	 *
+	 * @param Control<mixed> $control
 	 */
 	public static function validateNotEqual(Control $control, $arg): bool
 	{
@@ -147,6 +151,8 @@ final class Validator
 
 	/**
 	 * Returns argument.
+	 *
+	 * @param Control<mixed> $control
 	 */
 	public static function validateStatic(Control $control, bool $arg): bool
 	{
@@ -183,6 +189,8 @@ final class Validator
 
 	/**
 	 * Is a control's value number in specified range?
+	 *
+	 * @param Control<mixed> $control
 	 */
 	public static function validateRange(Control $control, array $range): bool
 	{
@@ -196,6 +204,8 @@ final class Validator
 
 	/**
 	 * Is a control's value number greater than or equal to the specified minimum?
+	 *
+	 * @param Control<mixed> $control
 	 */
 	public static function validateMin(Control $control, $minimum): bool
 	{
@@ -205,6 +215,8 @@ final class Validator
 
 	/**
 	 * Is a control's value number less than or equal to the specified maximum?
+	 *
+	 * @param Control<mixed> $control
 	 */
 	public static function validateMax(Control $control, $maximum): bool
 	{
@@ -214,6 +226,8 @@ final class Validator
 
 	/**
 	 * Count/length validator. Range is array, min and max length pair.
+	 *
+	 * @param Control<mixed> $control
 	 */
 	public static function validateLength(Control $control, array|int $range): bool
 	{
@@ -228,6 +242,8 @@ final class Validator
 
 	/**
 	 * Has control's value minimal count/length?
+	 *
+	 * @param Control<mixed> $control
 	 */
 	public static function validateMinLength(Control $control, $length): bool
 	{
@@ -237,6 +253,8 @@ final class Validator
 
 	/**
 	 * Is control's value count/length in limit?
+	 *
+	 * @param Control<mixed> $control
 	 */
 	public static function validateMaxLength(Control $control, $length): bool
 	{
@@ -255,6 +273,8 @@ final class Validator
 
 	/**
 	 * Is control's value valid email address?
+	 *
+	 * @param Control<mixed> $control
 	 */
 	public static function validateEmail(Control $control): bool
 	{
@@ -264,6 +284,8 @@ final class Validator
 
 	/**
 	 * Is control's value valid URL?
+	 *
+	 * @param Control<mixed> $control
 	 */
 	public static function validateUrl(Control $control): bool
 	{
@@ -285,6 +307,8 @@ final class Validator
 	/**
 	 * Does the control's value match the regular expression?
 	 * Case-sensitive to comply with the HTML5 <input /> pattern attribute behaviour
+	 *
+	 * @param Control<mixed> $control
 	 */
 	public static function validatePattern(Control $control, string $pattern, bool $caseInsensitive = false): bool
 	{
@@ -300,6 +324,9 @@ final class Validator
 	}
 
 
+	/**
+	 * @param Control<mixed> $control
+	 */
 	public static function validatePatternCaseInsensitive(Control $control, string $pattern): bool
 	{
 		return self::validatePattern($control, $pattern, caseInsensitive: true);
@@ -308,6 +335,8 @@ final class Validator
 
 	/**
 	 * Is a control's value numeric?
+	 *
+	 * @param Control<mixed> $control
 	 */
 	public static function validateNumeric(Control $control): bool
 	{
@@ -319,6 +348,8 @@ final class Validator
 
 	/**
 	 * Is a control's value decimal number?
+	 *
+	 * @param Control<mixed> $control
 	 */
 	public static function validateInteger(Control $control): bool
 	{
@@ -336,6 +367,8 @@ final class Validator
 
 	/**
 	 * Is a control's value float number?
+	 *
+	 * @param Control<mixed> $control
 	 */
 	public static function validateFloat(Control $control): bool
 	{

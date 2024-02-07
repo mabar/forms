@@ -10,7 +10,11 @@ declare(strict_types=1);
 namespace Nette\Forms;
 
 if (false) {
-	/** @deprecated use Nette\Forms\Control */
+	/**
+	 * @deprecated use Nette\Forms\Control
+	 * @template T_VALUE of mixed
+	 * @extends Control<T_VALUE>
+	 */
 	interface IControl extends Control
 	{
 	}
