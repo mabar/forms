@@ -20,6 +20,8 @@ use Stringable;
  * @property-read Html $separatorPrototype
  * @property-read Html $containerPrototype
  * @property-read Html $itemLabelPrototype
+ *
+ * @extends MultiChoiceControl<array<bool>>
  */
 class CheckboxList extends MultiChoiceControl
 {

@@ -16,6 +16,8 @@ use Stringable;
 
 /**
  * Check box control. Allows the user to select a true or false condition.
+ *
+ * @extends BaseControl<bool|null>
  */
 class Checkbox extends BaseControl
 {

@@ -17,6 +17,8 @@ use Stringable;
 
 /**
  * Implements the basic functionality common to text input controls.
+ *
+ * @implements BaseControl<string|null>
  */
 abstract class TextBase extends BaseControl
 {

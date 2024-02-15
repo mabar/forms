@@ -16,6 +16,8 @@ use Stringable;
 
 /**
  * Selects date or time or date & time.
+ *
+ * @extends BaseControl<\DateTimeInterface|string|int|null>
  */
 class DateTimeControl extends BaseControl
 {

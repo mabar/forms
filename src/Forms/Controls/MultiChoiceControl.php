@@ -17,6 +17,9 @@ use Nette;
  *
  * @property   array $items
  * @property-read array $selectedItems
+ *
+ * @template T_VALUE of array<mixed>
+ * @extends BaseControl<T_VALUE>
  */
 abstract class MultiChoiceControl extends BaseControl
 {

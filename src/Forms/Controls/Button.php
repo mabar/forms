@@ -15,6 +15,8 @@ use Stringable;
 
 /**
  * Push button control with no default behavior.
+ *
+ * @extends BaseControl<bool|null>
  */
 class Button extends BaseControl
 {

@@ -19,6 +19,8 @@ use Stringable;
 
 /**
  * Text box and browse button that allow users to select a file to upload to the server.
+ *
+ * @extends BaseControl<FileUpload|null>
  */
 class UploadControl extends BaseControl
 {
